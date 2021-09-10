@@ -33,9 +33,14 @@ void Worker::showAllData(){
         cout<<"\n Plec: ";
 
         switch(gender){
-            case 'm': cout<<"mezczyzna";
-            case 'k': cout<<"kobieta";
-            default: cout<<"-";
+            case 'm':
+                cout<<"mezczyzna";
+                break;
+            case 'k':
+                cout<<"kobieta";
+                break;
+            default:
+                cout<<"-";
         }
     };
     int main()
