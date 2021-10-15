@@ -21,7 +21,21 @@ public:
         surname = s_surname;
         dateBirthday = s_data;
     }
+
+    Worker(int, string);
+
+    Worker(int, string, string);
 };
+
+Worker::Worker(int pID, string pName) {
+    id = pID;
+    name = pName;
+}
+Worker::Worker(int pID, string pName, string pSurname) {
+    id = pID;
+    name = pName;
+    surname = pSurname;
+}
 void Worker::getData() {
     cout << "\nID: " << id << "\n Imię i Nazwisko: " << name << " " <<surname;
     cout << "\nData urodzenia: " << dateBirthday.dd << "," <<dateBirthday.mm << "," <<dateBirthday.yyyy;
@@ -32,6 +46,10 @@ int main()
     setlocale(LC_CTYPE, "polish");
     
     Worker worker("janusz", "nowak", {15,10,2021}, 731);
+
+    Worker nowak(12, "Janusz", "Nowak");
+
+    Worker nowak1(1234, "Janusz");
 
     Worker* wsk;
 

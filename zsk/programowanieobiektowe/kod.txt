@@ -1,0 +1,45 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+class Dog{
+	public:
+	string name;
+	string type;
+	string color;
+	string eyeColor;
+	unsigned short int height, length, weight;
+	
+	void sit();
+	void LayDown();
+	void Shake();
+	void Come();
+	
+	
+	
+	
+};
+void Dog::sit(){
+	cout<<"Pies siedzi"<<endl;
+}
+void Dog::LayDown(){
+	cout<<"Pies leży"<<endl;
+}
+void Dog::Shake(){
+	cout<<"Pies macha ogonem"<<endl;
+}
+void Dog::Come(){
+	cout<<"Pies przychodzi"<<endl;
+}
+int main(int argc, char** argv) {
+	setlocale(LC_CTYPE, "polish");
+	Dog rayne;
+	
+	rayne.Shake();
+	rayne.sit();
+	rayne.LayDown();
+	rayne.Come();
+	
+	return 0;
+}
